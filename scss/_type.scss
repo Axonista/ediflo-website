@@ -41,6 +41,14 @@ h6, .h6 { font-size: $font-size-h6; }
   font-weight: $display4-weight;
 }
 
+.text-white {
+  color: #fff;
+}
+
+.text-muted-white {
+  color: rgba(255, 255, 255, 0.72);
+}
+
 
 //
 // Horizontal rules

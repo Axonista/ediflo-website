@@ -42,17 +42,17 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
+$gray-dark:                 rgba(0,0,0, 0.88) !default;
+$gray:                      rgba(0,0,0, 0.56) !default;
+$gray-light:                rgba(0,0,0, 0.40) !default;
+$gray-lighter:              rgba(0,0,0,0.08) !default;
+$gray-lightest:             #f5f5f5 !default;
 
-$brand-primary:             #0275d8 !default;
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-primary:             #256FD0 !default;
+$brand-success:             #67cb88 !default;
+$brand-info:                #6455ec !default;
+$brand-warning:             #fc7753 !default;
+$brand-danger:              #e01a4f !default;
 $brand-inverse:             $gray-dark !default;
 
 
@@ -95,6 +95,14 @@ $spacers: (
   3: (
     x: ($spacer-x * 3),
     y: ($spacer-y * 3)
+  ),
+  4: (
+    x: ($spacer-x * 4),
+    y: ($spacer-y * 4)
+  ),
+  5: (
+    x: ($spacer-x * 5),
+    y: ($spacer-y * 5)
   )
 ) !default;
 $border-width: 1px !default;
@@ -158,7 +166,7 @@ $grid-gutter-width: 30px !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
@@ -196,7 +204,7 @@ $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 
-$lead-font-size:   1.25rem !default;
+$lead-font-size:   1.5rem !default;
 $lead-font-weight: 300 !default;
 
 $small-font-size: 80% !default;
