@@ -71,7 +71,7 @@
   float: left;
   padding-top:    $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   font-size: $font-size-lg;
 
   @include hover-focus {
@@ -209,8 +209,9 @@
   }
 }
 
-.navbar-transparent {
-  background-color: $gray-light;
+.navbar-white {
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.24);
 }
 
 // Navbar toggleable

@@ -1,13 +1,15 @@
 .jumbotron {
-  padding: $jumbotron-padding ($jumbotron-padding / 8);
+  padding: $jumbotron-padding ($jumbotron-padding / 5);
+  margin-top: 54px;
   margin-bottom: $jumbotron-padding;
   background-color: $jumbotron-bg;
-  background-image: linear-gradient($gray-lighter, $gray-lighter), url('../../assets/images/hero-placeholder-color.jpg');
-  background-size: cover;
+  //background-image: url('../../assets/images/hero-placeholder-wide.jpg');
+  background-image: url('../../assets/images/hero-placeholder-color-wide.jpg');
+  background-position-x: 75%;
   @include border-radius($border-radius-lg);
 
   @include media-breakpoint-up(sm) {
-    padding: ($jumbotron-padding * 8) $jumbotron-padding;
+    padding: ($jumbotron-padding * 5) $jumbotron-padding;
   }
 }
 

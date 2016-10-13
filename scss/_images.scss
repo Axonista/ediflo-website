@@ -9,6 +9,14 @@
   @include img-fluid();
 }
 
+.img-placeholder {
+  opacity: 0.5;
+}
+
+.img-screenshot {
+  box-shadow: 0 16px 32px rgba(0,0,0,0.24);
+}
+
 // Rounded corners
 .img-rounded {
   @include border-radius($border-radius-lg);
