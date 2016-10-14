@@ -2359,6 +2359,12 @@ input[type="button"].btn-block {
   margin-left: 1rem;
 }
 
+.collapse.in .nav {
+  clear: both;
+  padding-top: 1em;
+  text-align: center;
+}
+
 .nav-tabs {
   border-bottom: 1px solid #ddd;
 }

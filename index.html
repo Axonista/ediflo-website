@@ -13,25 +13,30 @@
 		<nav id="mainNav" class="navbar navbar-fixed-top navbar-light navbar-white">
 			<div class="container">
 				<a class="navbar-brand" href="#"><img src="assets/images/ediflo.png" alt="ediflo logo" height="30px" width="100px"></a>
-			  <ul class="nav navbar-nav">
-			    <li class="nav-item">
-			      <a class="nav-link active" href="#overview">Overview</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link" href="#product-tour">Product Tour</a>
-			    </li>
-					<li class="nav-item">
-			      <a class="nav-link" href="#features">Features</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link" href="#">Customers</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link" href="#">Contact</a>
-			    </li>
-			  </ul>
-				<div class="pull-xs-right">
-					<button class="btn btn-success">Request a demo</button>
+				<button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#mobileNav">
+		&#9776;
+				</button>
+				<div class="collapse navbar-toggleable-xs" id="mobileNav">
+				  <ul class="nav navbar-nav">
+				    <li class="nav-item">
+				      <a class="nav-link active" href="#overview">Overview</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#product">Product</a>
+				    </li>
+						<li class="nav-item">
+				      <a class="nav-link" href="#features">Features</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Customers</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Contact</a>
+				    </li>
+				  </ul>
+					<div class="pull-xs-right hidden-sm-down">
+						<button class="btn btn-success">Request a demo</button>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -54,17 +59,16 @@
 				<p class="subheading col-sm-12 col-md-10 col-lg-6 p-b-4">A complete management and distribution platform for video-based interactive digital experiences.</p>
 			</div>
 			<div class="row p-b-3">
-				<div class="col-md-3">
+				<div class="col-sm-12 col-md-6 col-lg-3 m-b-3">
 					<h3>Library</h3>
 					<h6 class="text-muted m-b-1">DIGITAL ASSET MANAGEMENT</h6>
 					<ul style="padding-left: 20px;">
-						<li>Digital asset management</li>
 						<li>Metadata management</li>
 						<li>Content collections</li>
 						<li>Transcoding</li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-12 col-md-6 col-lg-3 m-b-3">
 					<h3>Live</h3>
 					<h6 class="text-muted m-b-1">SCHEDULING & PLAYOUT</h6>
 					<ul style="padding-left: 20px;">
@@ -73,7 +77,7 @@
 						<li>Realtime content synchronization</li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-12 col-md-6 col-lg-3 m-b-3">
 					<h3>Interactive</h3>
 					<h6 class="text-muted m-b-1">IN-VIDEO INTERACTIVITY</h6>
 					<ul style="padding-left: 20px;">
@@ -82,7 +86,7 @@
 						<li>Suite of reference apps</li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-12 col-md-6 col-lg-3 m-b-3">
 					<h3>Analytics</h3>
 					<h6 class="text-muted m-b-1">METRICS & INSIGHTS</h6>
 					<ul style="padding-left: 20px;">
@@ -94,13 +98,13 @@
 			</div>
 		</div>
 
-		<div id="product-tour" class="container p-y-3">
-			<h2 class="display-3 text-muted">Product Tour</h2>
+		<div id="product" class="container">
+			<h2 class="display-3 text-muted">Product</h2>
 		</div>
 
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-5 p-r-2 p-y-5">
+				<div class="col-sm-12 col-md-6 col-lg-5 p-r-2 p-t-5 p-b-3">
 					<h2 class="display-4">Library</h2>
 					<h6 class="text-muted m-y-2">DIGITAL ASSET MANAGEMENT</h6>
 					<ul class="list-unstyled">
@@ -109,15 +113,15 @@
   					<li class="lead m-b-1">Rich feature set and powerful search to aid content discovery.</li>
 					</ul>
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg-7 p-y-5 hidden-sm-down ">
+				<div class="col-sm-12 col-md-6 col-lg-7 p-t-5 p-b-3 hidden-sm-down ">
 					<img class="img-fluid img-screenshot" src="assets/images/ediflo-library.png">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-7 p-r-2 p-y-5 hidden-sm-down">
+				<div class="col-sm-12 col-md-6 col-lg-7 p-r-2 p-t-5 p-b-3 hidden-sm-down">
 					<img class="img-fluid img-screenshot" src="assets/images/ediflo-schedule.png">
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg-5 p-y-5">
+				<div class="col-sm-12 col-md-6 col-lg-5 p-t-5 p-b-3">
 					<h2 class="display-4">Live</h2>
 					<h6 class="text-muted m-y-2">SCHEDULING & PLAYOUT</h6>
 					<ul class="list-unstyled">
@@ -129,7 +133,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-5 p-r-2 p-y-5">
+				<div class="col-sm-12 col-md-6 col-lg-5 p-r-2 p-t-5 p-b-3">
 					<h2 class="display-4">Interactive</h2>
 					<h6 class="text-muted m-y-2">IN-VIDEO INTERACTIVITY</h6>
 					<ul class="list-unstyled">
@@ -138,15 +142,15 @@
   					<li class="lead m-b-1">Works with Remoco player or any third party.</li>
 					</ul>
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg-7 p-y-5 hidden-sm-down">
+				<div class="col-sm-12 col-md-6 col-lg-7 p-t-5 p-b-3 hidden-sm-down">
 					<img class="img-fluid img-screenshot" src="assets/images/ediflo-interactive.png">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-6 p-x-0">
+				<div class="col-sm-12 col-md-6 col-lg-7 p-r-2 p-t-5 p-b-3 hidden-sm-down">
 					<img class="img-fluid img-placeholder" src="http://placehold.it/800x640">
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg-6 p-x-5 p-y-5">
+				<div class="col-sm-12 col-md-6 col-lg-5 p-t-5 p-b-3">
 					<h2 class="display-4">Analytics</h2>
 					<h6 class="text-muted m-y-2">METRICS & INSIGHTS</h6>
 					<ul class="list-unstyled">
