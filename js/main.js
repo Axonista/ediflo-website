@@ -1,1 +1,1 @@
-$('body').scrollspy({ target: '#mainNav' })
+$('body').scrollspy({ target: '#mainNav', offset:64 })
