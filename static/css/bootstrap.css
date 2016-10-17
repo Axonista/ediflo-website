@@ -601,7 +601,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 small,
@@ -691,8 +691,7 @@ dl.row > dd + dt {
 }
 
 .img-screenshot {
-  -webkit-box-shadow: 0 16px 32px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 16px 32px rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .img-rounded {
@@ -2860,8 +2859,8 @@ input[type="button"].btn-block {
 
 .navbar-white {
   background-color: #fff;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .navbar-toggleable-xs::after {
