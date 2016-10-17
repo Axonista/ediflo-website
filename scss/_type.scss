@@ -93,6 +93,9 @@ mark,
 //
 // Lists
 //
+ul {
+  list-style-type: circle;
+}
 
 .list-unstyled {
   @include list-unstyled;

@@ -48,6 +48,16 @@
   }
 }
 
+.card-tile {
+  border: none;
+  border-radius: 0;
+  border-left: $card-border-width solid $card-border-color;
+
+  &:first-child {
+    border: none;
+  }
+}
+
 .card {
   > .list-group:first-child {
     .list-group-item:first-child {
@@ -125,6 +135,9 @@
 }
 .card-danger {
   @include card-variant($brand-danger, $brand-danger);
+}
+.card-grey {
+  @include card-variant($gray-lightest, $gray-lightest);
 }
 
 // Remove all backgrounds
