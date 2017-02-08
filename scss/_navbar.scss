@@ -108,8 +108,7 @@
   padding: .5rem .75rem;
   font-size: $font-size-lg;
   line-height: 1;
-  background: rgba(255,255,255,0.1);
-  color: #fff;
+  background: none;
   border: $border-width solid transparent;
   @include border-radius($btn-border-radius);
 
@@ -178,7 +177,6 @@
 
 // White links against a dark background
 .navbar-dark {
-  background-color: #123768;
   .navbar-brand {
     color: $navbar-dark-active-color;
 
@@ -209,6 +207,11 @@
   .navbar-divider {
     background-color: rgba(255,255,255,.075);
   }
+}
+
+.navbar-white {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.24);
 }
 
 // Navbar toggleable
