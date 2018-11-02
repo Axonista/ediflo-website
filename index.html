@@ -42,31 +42,44 @@
 		  ga('send', 'pageview');
 
 		</script>
+
+		<!-- Start of Async Drift Code -->
+		<script>
+		"use strict";
+
+		!function() {
+		 var t = window.driftt = window.drift = window.driftt || [];
+		 if (!t.init) {
+		   if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		   t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+		   t.factory = function(e) {
+		     return function() {
+		       var n = Array.prototype.slice.call(arguments);
+		       return n.unshift(e), t.push(n), t;
+		     };
+		   }, t.methods.forEach(function(e) {
+		     t[e] = t.factory(e);
+		   }), t.load = function(t) {
+		     var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		     o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		     var i = document.getElementsByTagName("script")[0];
+		     i.parentNode.insertBefore(o, i);
+		   };
+		 }
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('274fk3yw6z4i');
+		</script>
+		<!-- End of Async Drift Code -->
+
   </head>
   <body data-spy="scroll" data-target="#mainNav">
 		<nav id="mainNav" class="navbar navbar-fixed-top navbar-light navbar-white">
 			<div class="container">
 				<a class="navbar-brand" href="#"><img src="assets/images/ediflo.png" alt="ediflo logo" height="30px" width="100px"></a>
-				<button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#mobileNav">
-		&#9776;
-				</button>
 				<div class="collapse navbar-toggleable-xs" id="mobileNav">
-				  <ul class="nav navbar-nav">
-				    <li class="nav-item">
-				      <a class="nav-link active" href="#overview">Overview</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#product">Product</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#customers">Customers</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#contact">Contact</a>
-				    </li>
-				  </ul>
 					<div class="pull-xs-right hidden-sm-down">
-						<a class="btn btn-success" href="#contact">Request a demo</a>
+						<a class="btn btn-success" href="#contact">Get in Touch</a>
 					</div>
 				</div>
 			</div>
@@ -75,179 +88,90 @@
 		<div id="top" class="jumbotron jumbotron-fluid">
 		  <div class="container">
 				<div class="col-sm-12 col-md-10 col-lg-6 p-x-0">
-		    	<h1 class="text-white">Smart video for smart devices.</h1>
-		    	<p class="subheading text-muted-white">Ediflo is powering a new generation of interactive digital video products for the world’s leading brands and media companies.</p>
+		    	<h1 class="text-white">A new way to grow your video business and engage your audience</h1>
 				</div>
 		  </div>
 		</div>
 
-		<div id="overview" class="container p-t-5 p-y-3">
-			<h2 class="display-3 text-muted">What is Ediflo?</h2>
-		</div>
+		<section class="client-section">
+			<h2>Trusted by the best</h2>
+			<div class="client-section__client-list">
+				<img src="/assets/images/client-logos/the-q.png" srcset="/assets/images/client-logos/the-q.png 1x, /assets/images/client-logos/the-q@2x.png 2x, /assets/images/client-logos/the-q@3x.png 3x" alt="The Q">
+				<img src="/assets/images/client-logos/waterbear.png" srcset="/assets/images/client-logos/waterbear.png 1x, /assets/images/client-logos/waterbear@2x.png 2x, /assets/images/client-logos/waterbear@3x.png 3x" alt="Waterbear">
+				<img src="/assets/images/client-logos/qvc.png" srcset="/assets/images/client-logos/qvc.png 1x, /assets/images/client-logos/qvc@2x.png 2x, /assets/images/client-logos/qvc@3x.png 3x" alt="QVC">
+				<img src="/assets/images/client-logos/kidsclick.png" srcset="/assets/images/client-logos/kidsclick.png 1x, /assets/images/client-logos/kidsclick@2x.png 2x, /assets/images/client-logos/kidsclick@3x.png 3x" alt="Kidsclick">
+				<img src="/assets/images/client-logos/tbd.png" srcset="/assets/images/client-logos/tbd.png 1x, /assets/images/client-logos/tbd@2x.png 2x, /assets/images/client-logos/tbd@3x.png 3x" alt="TBD">
+			</div>
+		</section>
 
-		<div class="container">
-			<div class="row">
-				<p class="subheading col-sm-12 col-md-10 col-lg-8 p-b-4">A complete one-stop-shop management platform for building, launching and powering modern interactive digital video products.</p>
-			</div>
-			<div class="row p-b-3">
-				<div class="col-sm-12 col-md-6 col-lg-3 m-b-3">
-					<h3>Library</h3>
-					<h6 class="text-muted m-b-1">DIGITAL ASSET MANAGEMENT</h6>
-					<ul style="padding-left: 20px;">
-						<li>Ingest and transcode</li>
-						<li>Metadata management</li>
-						<li>Curation tools</li>
-						<li>Syndication feeds</li>
-					</ul>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-3 m-b-3">
-					<h3>Live</h3>
-					<h6 class="text-muted m-b-1">SCHEDULING & PLAYOUT</h6>
-					<ul style="padding-left: 20px;">
-						<li>Live streaming</li>
-						<li>Linear scheduling</li>
-						<li>Realtime content sync</li>
-						<li>Live storytelling dashboard</li>
-					</ul>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-3">
-					<h3>Interactive</h3>
-					<h6 class="text-muted m-b-1">IN-VIDEO INTERACTIVITY</h6>
-					<ul style="padding-left: 20px;">
-						<li>Multi-platform native SDK</li>
-						<li>Suite of reference apps</li>
-						<li>Interactive overlays</li>
-						<li>In-video shopping</li>
-					</ul>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-3">
-					<h3>Analytics</h3>
-					<h6 class="text-muted m-b-1">METRICS & INSIGHTS</h6>
-					<ul style="padding-left: 20px;">
-						<li>Real-time video metrics</li>
-						<li>Insights into audience engagement</li>
-						<li>Video commerce reports</li>
-						<li>Custom exports</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div id="product" class="container p-t-5">
-			<h2 class="display-3 text-muted">Product</h2>
-		</div>
-
-		<div class="container">
-			<div class="row p-y-5">
-				<div class="col-sm-12 col-md-6 col-lg-5 p-r-2 p-b-3">
-					<h2 class="display-4">Library</h2>
-					<h6 class="text-muted m-y-2">DIGITAL ASSET MANAGEMENT</h6>
-					<ul class="list-unstyled">
-						<li class="lead m-b-1">Store, manage and curate content and metadata for any digital video product.</li>
-  					<li class="lead m-b-1">Automated ingest from numerous sources.</li>
-						<li class="lead m-b-1">Rich feature set and powerful search to aid content curation.</li>
-						<li class="lead m-b-1">Integrates easily with other asset management systems.</li>
-						<li class="lead m-b-1">Beautiful, easy-to-use interface.</li>
-					</ul>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-7">
-					<img class="img-fluid img-screenshot" src="assets/images/screens/ediflo-library.png" srcset="assets/images/screens/ediflo-library@2x.png 2x">
-				</div>
-			</div>
-			<hr>
-			<div class="row p-y-5">
-				<div class="col-sm-12 col-md-6 col-lg-5 push-md-6 push-lg-7 p-b-3">
-					<h2 class="display-4">Live</h2>
-					<h6 class="text-muted m-y-2">SCHEDULING & PLAYOUT</h6>
-					<ul class="list-unstyled">
-  					<li class="lead m-b-1">Easy to use live streaming platform.</li>
-  					<li class="lead m-b-1">Planning and scheduling for linear channels.</li>
-						<li class="lead m-b-1">Integrates easily with other scheduling systems.</li>
-						<li class="lead m-b-1">Synchronize with Interactive for realtime in-app interactive graphics.</li>
-  					<li class="lead m-b-1">Cloud playout of linear channels.</li>
-					</ul>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-7 pull-md-6 pull-lg-5">
-					<img class="img-fluid img-screenshot" src="assets/images/screens/ediflo-schedule.png" srcset="assets/images/screens/ediflo-schedule@2x.png 2x">
-				</div>
-			</div>
-			<hr>
-			<div class="row p-y-5">
-				<div class="col-sm-12 col-md-6 col-lg-5 p-r-2 p-b-3">
-					<h2 class="display-4">Interactive</h2>
-					<h6 class="text-muted m-y-2">IN-VIDEO INTERACTIVITY</h6>
-					<ul class="list-unstyled">
-  					<li class="lead m-b-1">Suite of pre-built reference video apps across Apple, Android, Roku and Amazon platforms.</li>
-  					<li class="lead m-b-1">Multi-platform SDK bringing interactive capabilities into any video app.</li>
-  					<li class="lead m-b-1">Turn traditionally baked-in graphics and captions into intuitively touchable UI elements.</li>
-						<li class="lead m-b-1">Works with any video player.</li>
-					</ul>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-7">
-					<img class="img-fluid img-screenshot" src="assets/images/screens/ediflo-interactive.png" srcset="assets/images/screens/ediflo-interactive@2x.png 2x">
-				</div>
-			</div>
-			<hr>
-			<div class="row p-y-5">
-				<div class="col-sm-12 col-md-6 col-lg-5 push-md-6 push-lg-7 p-b-3">
-					<h2 class="display-4">Analytics</h2>
-					<h6 class="text-muted m-y-2">METRICS & INSIGHTS</h6>
-					<ul class="list-unstyled">
-						<li class="lead m-b-1">Real-time video plays and audience engagement metrics.</li>
-  					<li class="lead m-b-1">Integrates with existing analytics platforms for richer insights.</li>
-  					<li class="lead m-b-1">Daily analytics email summaries.</li>
-					</ul>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-7 pull-md-6 pull-lg-5">
-					<img class="img-fluid img-screenshot" src="assets/images/screens/ediflo-analytics.png" srcset="assets/images/screens/ediflo-analytics@2x.png 2x">
-				</div>
-			</div>
+		<div class="container" id="use-cases">
 			<hr>
 		</div>
 
-		<div id="customers" class="container p-t-5 p-y-3">
-			<h2 class="display-3 text-muted">Customers</h2>
-		</div>
+		<section class="cards-section">
+			<h2>A video platform for digital brands and media companies</h2>
+	      <div class="card-row one-col">
+	        <figure>
+	          <figcaption>
+	              <h3>Grow</h3>
+	              <p>Reach audiences anywhere, and quickly scale your video business.</p>
+	          </figcaption>
+	        </figure>
+	        <figure>
+            <figcaption>
+                <h3>Engage</h3>
+                <p>Transform your video to capture, activate, and retain audiences attention.</p>
+            </figcaption>
+	        </figure>
+	        <figure>
+            <figcaption>
+                <h3>Convert</h3>
+                <p>Unlock new revenue streams and turn your viewers into customers.</p>
+            </figcaption>
+	        </figure>
+	      </div>
+		</section>
 
 		<div class="container">
-			<div class="row p-y-2">
-				<div class="card-deck-wrapper">
-  				<div class="card-deck">
-					  <div class="card card-tile p-l-1">
-					    <img class="card-img-top img-fluid" src="assets/images/qvc.png" srcset="assets/images/qvc@2x.png 2x">
-					    <div class="card-block">
-								<ul class="p-l-1">
-									<li>Interactive graphic overlay with product details and Buy button.</li>
-									<li>Realtime curation and delivery of interactive social and commerce overlays during live broadcast.</li>
-									<li>Apple TV app was selected as one of Apple’s "Best of 2015" apps.</li>
-								</ul>
-					    </div>
-					  </div>
-					  <div class="card card-tile p-l-1">
-					    <img class="card-img-top img-fluid" src="assets/images/the-qyou.png" srcset="assets/images/the-qyou@2x.png 2x">
-					    <div class="card-block">
-								<ul class="p-l-1">
-									<li>Linear streaming & VOD hybrid app.</li>
-									<li>Allows users to seamlessly jump backward <em>and forward</em> in the linear channel.</li>
-									<li>Advanced content discovery, personalization, search and social.</li>
-									<li>Mini video player for non-stop playback while browsing.</li>
-								</ul>
-					    </div>
-					  </div>
-					</div>
+			<hr>
+		</div>
+
+		<section id="products" class="cards-section">
+			<h2>The Ediflo Suite</h2>
+			<h3>Ediflo is a video technology platform that enables digital brands to grow, engage, and convert audiences on OTT devices</h3>
+	      <div class="card-row two-col">
+	        <figure>
+	          <figcaption>
+	              <h3>Interactive</h3>
+	              <p>Reach audiences anywhere, and quickly scale your video business.</p>
+	          </figcaption>
+	        </figure>
+	        <figure>
+            <figcaption>
+                <h3>Distribution</h3>
+                <p>Transform your video to capture, activate, and retain audiences attention.</p>
+            </figcaption>
+	        </figure>
 				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-
-			</div>
-		</div>
+				<div class="card-row two-col">
+	        <figure>
+            <figcaption>
+                <h3>Library</h3>
+                <p>Unlock new revenue streams and turn your viewers into customers.</p>
+            </figcaption>
+	        </figure>
+					<figure>
+						<figcaption>
+								<h3>Linear</h3>
+								<p>Unlock new revenue streams and turn your viewers into customers.</p>
+						</figcaption>
+					</figure>
+	      </div>
+		</section>
 
 		<section class="contact-section" id="contact" >
-				<h1>Get in touch</h1>
-				<h2>Talk to us about activating your audience today</h2>
+				<h2>Get in touch</h2>
+				<h3>Let’s talk about what Ediflo can do for your video business</h3>
 				<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 					<input type=hidden name="oid" value="00D1I000003nncv">
 					<input type=hidden name="retURL" value="http://www.ediflo.tv/thanks.html">
