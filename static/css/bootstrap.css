@@ -4628,7 +4628,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .client-section .client-section__client-list>img,.item-list-section .client-section__client-list>img,.platform-section--invert .client-section__client-list>img,.platform-section .client-section__client-list>img{
   margin:1em;
-  opacity: .7;
+  opacity: .8;
   }
 
 @media screen and (max-width:820px){
