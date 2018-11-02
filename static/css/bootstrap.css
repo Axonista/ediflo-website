@@ -4461,4 +4461,168 @@ a.text-danger:focus, a.text-danger:hover {
     display: none !important;
   }
 }
+
+
+/* Sales force form style */
+/* Imported from Axonista.com */
+
+.contact-section{
+  display:flex;
+  width:100%;
+  flex-direction:column;
+  align-items:center;
+  background:#f8f8f8!important;
+  padding-bottom:5em
+  }
+
+.contact-section h1{
+  color: #000;
+  font-size:60px;
+  font-weight:500;
+  line-height:1.07;
+  text-align:center;
+  margin-top:1em;
+  max-width:730px
+  }
+
+.contact-section h2{
+  font-size:32px;
+  font-weight:400;
+  opacity:.4;
+  text-align:center;
+  margin-top:8px;
+  max-width:730px
+  }
+
+.contact-section form,.contact-section h2{
+  }
+
+.contact-section form{
+  display:flex;
+  flex-direction:column;
+  width:90%;
+  max-width:600px;
+  margin-top:3em;
+  font-size:20px
+  }
+
+.contact-section form label{
+  padding-bottom:.25em
+  }
+
+.contact-section form input,.contact-section form select,.contact-section form textarea{
+  border:1px solid #d2d2d2;
+  border-radius:4px;
+  height:48px;
+  font-size:20px;
+  padding:1em;
+  margin-bottom:1.5em;
+  background:#fff
+  }
+
+.contact-section form input:focus,.contact-section form select:focus,.contact-section form textarea:focus{
+  outline:none!important;
+  border-color:#256FD0;
+  box-shadow:0 0 10px #256FD0
+  }
+
+.contact-section form textarea{
+  resize:none;
+  height:144px;
+  }
+
+.contact-section form button{
+  align-self:flex-end;
+  font-size:16px;
+  font-weight:500;
+  text-transform:uppercase;
+  color:#fff;
+  background-color:#d4d4d4;
+  border-radius:4px;
+  padding:.5em 1em
+  }
+
+.contact-section form button:hover{
+  cursor:pointer;
+  background-color:#256FD0;
+  }
+
+@media screen and (max-width:820px){
+  .contact-section h1{
+    font-size:34px;
+    line-height:1.12
+    }
+
+  .contact-section h2{
+    font-size:22px;
+    line-height:1.18
+    }
+
+  .contact-section form{
+    margin-top:2em;
+    font-size:20px
+    }
+
+  .contact-section form label{
+    font-size:16px
+    }
+
+    }
+
+@media screen and (max-width:510px){
+  .contact-section h2{
+    padding:0 3em
+  }
+}
+
+/* Sales force thanks message — displayed after form submission */
+
+.thanks-section{
+  display:flex;
+  width:100%;
+  flex-direction:column;
+  align-items:center;
+  background:#f8f8f8;
+  padding-top:6em;
+  padding-bottom:6em
+  }
+
+.thanks-section h1{
+  color: #000;
+  font-size:60px;
+  font-weight:500;
+  line-height:1.07;
+  text-align:center;
+  margin-top:1em
+  }
+
+.thanks-section h2{
+  font-size:32px;
+  font-weight:400;
+  opacity:.4;
+  text-align:center;
+  margin-top:4px;
+  margin-bottom:2em;
+  max-width:730px
+  }
+
+@media screen and (max-width:820px){
+  .thanks-section{
+    flex-direction:column;
+    align-items:center;
+    text-align:center
+    }
+
+  .thanks-section h1{
+    font-size:34px;
+    line-height:1.12
+    }
+
+  .thanks-section h2{
+    font-size:22px;
+    line-height:1.18;
+    padding:.25em 2.25em
+    }
+  }
+
 /*# sourceMappingURL=bootstrap.css.map */
