@@ -29,7 +29,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="static/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="static/css/bootstrap.css">
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -238,21 +239,49 @@
 			</div>
 		</div>
 
-		<div id="contact" class="container p-t-5 p-y-3">
-			<h2 class="display-3 text-muted">Contact</h2>
-		</div>
-
 		<div class="container">
 			<div class="row">
-				<p class="subheading col-sm-12 col-md-10 col-lg-9 m-b-2">Interested in learning more about what Ediflo can do for you?</p>
-			</div>
-			<div class="row m-y-2">
-				<p class="subheading col-sm-12 col-md-10 col-lg-9">Drop us an email at <a href="mailto:connect@axonista.com">connect@axonista.com</a> with any questions, or to request a demo, and we'd be delighted to discuss how we can help you with your plans.</p>
+
 			</div>
 		</div>
 
+		<section class="contact-section" id="contact" >
+				<h1>Get in touch</h1>
+				<h2>Talk to us about activating your audience today</h2>
+				<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+					<input type=hidden name="oid" value="00D1I000003nncv">
+					<input type=hidden name="retURL" value="http://www.ediflo.tv/thanks.html">
+					<input type="hidden" id="lead_source" name="lead_source" value="Web" />
+					<input type="hidden" id="00N1I00000M7ank" name="00N1I00000M7ank" value="http://www.ediflo.tv/"/>
+
+					<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+					<!--  these lines if you wish to test in debug mode.                          -->
+					<!-- <input type="hidden" name="debug" value=1> -->
+					<!-- <input type="hidden" name="debugEmail" value="thomas.tennyson@axonista.com"> -->
+
+					<label for="first_name">First Name</label>
+					<input autocomplete=off type="text" name="first_name" required>
+					<label for="last_name">Last Name</label>
+					<input autocomplete=off type="text" name="last_name" required>
+					<label for="email">Email address</label>
+					<input autocomplete=off type="email" name="email" required>
+					<label for="industry">Industry (Optional)</label>
+					<select name="industry">
+						<option value="not specified" selected>Choose&hellip;</option>
+						<option value="Retail">Retail</option>
+						<option value="Hotel / Travel">Hotel / Travel</option>
+						<option value="Brand">Brand</option>
+						<option value="TV">TV</option>
+						<option value="other">Other</option>
+					</select>
+					<label for="message">Message</label>
+					<textarea id="00N1I00000M7anM" name="00N1I00000M7anM" rows="8"></textarea>
+					<div class="g-recaptcha" data-sitekey="6LcBpWQUAAAAADnkjt-OY-Irm-9c1UPPVIkXghHV"></div>
+					<button type="submit" name="submit">Send Message</button>
+				</form>
+		</section>
+
 		<footer class="container m-y-3">
-			<hr class="m-b-2">
 			<div>
 				<span class="text-muted">© <script type="text/javascript">
           document.write(new Date().getFullYear());
